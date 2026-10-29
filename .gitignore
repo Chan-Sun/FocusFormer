@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+data/
+checkpoints/
+work_dirs/
+output/
+.DS_Store

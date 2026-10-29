@@ -1,0 +1,10 @@
+_BASE_: base.yaml
+MODEL:
+  BACKBONE:
+    NAME: "SAM2HieraSBackbone"
+    FREEZE_AT: 0
+  # The backbone loads only the SAM 2 image encoder weights from HIERA.CHECKPOINT.
+  WEIGHTS: ""
+  HIERA:
+    CHECKPOINT: "checkpoints/sam2.1_hiera_small.pt"
+    OUT_FEATURES: ["res2", "res3", "res4", "res5"]
